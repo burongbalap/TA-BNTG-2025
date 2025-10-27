@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nandana Xavier Abduh Majid - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'] 
+                    },
+                    colors: {
+                        'primary': tailwind.colors.indigo,
+                        'secondary': tailwind.colors.gray,
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-secondary-50">
+
+    <nav class="bg-white shadow-md sticky top-0 z-40"> <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-600">Nandana Xavier Abduh Majid.</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-secondary-600 hover:text-primary-600 transition duration-300">Home</a>
+                <a href="#about" class="text-secondary-600 hover:text-primary-600 transition duration-300">About</a>
+                <a href="#skills" class="text-secondary-600 hover:text-primary-600 transition duration-300">Skills</a>
+                <a href="#portfolio" class="text-secondary-600 hover:text-primary-600 transition duration-300">Portfolio</a>
+                <a href="#contact" class="text-secondary-600 hover:text-primary-600 transition duration-300">Contact</a>
+            </div>
+            
+            <button class="md:hidden text-secondary-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-secondary-900 mb-4">
+                    Halo, Saya <span class="text-primary-600"> Nandana</span>
+                </h1>
+                <p class="text-xl text-secondary-600 mb-8">
+                    Seorang Web Developer yang bersemangat mengubah ide-ide kreatif menjadi aplikasi web yang interaktif dan fungsional.
+                </p>
+                <a href="#portfolio" class="inline-block bg-primary-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-primary-700 transition duration-300 shadow-lg hover:shadow-primary-300 transform hover:scale-105">
+                    Lihat Karya Saya
+                </a>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0">
+                <img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80" alt="Foto [Nama Anda] sedang bekerja" class="rounded-full shadow-2xl mx-auto">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="bg-secondary-50 py-20">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=400&q=80" alt="Workspace" class="rounded-lg shadow-xl aspect-video object-cover">
+                </div>
+                <div class="lg:w-1/2 lg:pl-16 mt-10 lg:mt-0">
+                    <h2 class="text-3xl font-bold text-secondary-900 mb-6">Tentang Saya</h2>
+                    <p class="text-secondary-700 mb-4">
+                        Saya adalah seorang mahasiswa Teknik Informatika di Universitas Dian Nuswantoro dengan ketertarikan mendalam pada pengembangan web. Saya menikmati proses belajar teknologi baru dan menerapkannya untuk membangun sesuatu yang bermanfaat.
+                    </d>
+                    <p class="text-secondary-700">
+                        Di luar coding, saya suka bermain motor, touring, dan memahami bagaimana cara kerjanya sebuah motor. Saya percaya bahwa keseimbangan antara kehidupan teknis dan non-teknis adalah kunci kreativitas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">Keahlian Saya</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="flex items-center bg-primary-100 text-primary-800 text-base font-medium px-4 py-2 rounded-full">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    HTML5
+                </span>
+                <span class="flex items-center bg-primary-100 text-primary-800 text-base font-medium px-4 py-2 rounded-full">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    CSS3
+                </span>
+                <span class="flex items-center bg-primary-100 text-primary-800 text-base font-medium px-4 py-2 rounded-full">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    JavaScript
+                </span>
+                <span class="flex items-center bg-primary-100 text-primary-800 text-base font-medium px-4 py-2 rounded-full">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Tailwind CSS
+                </span>
+                <span class="flex items-center bg-secondary-100 text-secondary-800 text-base font-medium px-4 py-2 rounded-full">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    React
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-secondary-50 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">Portofolio Saya</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Website Restoran" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary-900">Website Restoran "RasaNusantara"</h3>
+                        <p class="text-secondary-700 mb-4">Membuat landing page untuk restoran lokal menggunakan HTML, CSS, dan Tailwind...</p>
+                        <button data-modal-target="projectModal" class="text-primary-600 font-semibold hover:underline">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Aplikasi To-Do List" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary-900">Aplikasi To-Do List Interaktif</h3>
+                        <p class="text-secondary-700 mb-4">Aplikasi web sederhana yang dibuat dengan JavaScript untuk menambah, menghapus...</p>
+                        <button data-modal-target="projectModal" class="text-primary-600 font-semibold hover:underline">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Landing Page Tech" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary-900">Landing Page Startup "TechFuture"</h3>
+                        <p class="text-secondary-700 mb-4">Desain dan implementasi landing page untuk produk teknologi fiktif...</p>
+                        <button data-modal-target="projectModal" class="text-primary-600 font-semibold hover:underline">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Blog Pribadi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary-900">Blog Pribadi "Jejak Digital"</h3>
+                        <p class="text-secondary-700 mb-4">Membangun template blog statis dengan fokus pada tipografi yang mudah dibaca...</p>
+                        <button data-modal-target="projectModal" class="text-primary-600 font-semibold hover:underline">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1584994264257-c3a3b70e5138?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="UI Kalkulator" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-secondary-900">Desain UI Aplikasi Kalkulator</h3>
+                        <p class="text-secondary-700 mb-4">Project desain antarmuka (UI) untuk aplikasi kalkulator mobile, dibuat...</p>
+                        <button data-modal-target="projectModal" class="text-primary-600 font-semibold hover:underline">Lihat Detail</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-20">
+        <div class="container mx-auto px-6 md:w-2/3 lg:w-1/2">
+            <h2 class="text-3xl font-bold text-center text-secondary-900 mb-12">Hubungi Saya</h2>
+            
+            <form action="#" method="POST" class="bg-secondary-50 p-8 rounded-lg shadow-xl">
+                <div class="mb-5">
+                    <label for="name" class="block text-secondary-700 font-semibold mb-2">Nama</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block text-secondary-700 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500" required>
+                </div>
+                <div class="mb-5">
+                    <label for="message" class="block text-secondary-700 font-semibold mb-2">Pesan</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="w-full bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-primary-700 transition duration-300 shadow-lg hover:shadow-primary-300 transform hover:scale-105">
+                        Kirim Pesan
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-secondary-900 text-secondary-300 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-white transition duration-300" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.27.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.38.201 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="hover:text-white transition duration-300" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2025 [Nama Anda]. Dibuat dengan <span class="text-red-500">&hearts;</span> dan Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-2xl w-full overflow-hidden">
+            <div class="flex justify-between items-center p-5 border-b">
+                <h3 class="text-2xl font-bold text-secondary-900">Detail Project (Dummy)</h3>
+                <button data-modal-close="projectModal" class="text-secondary-500 hover:text-secondary-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-5">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Detail Project" class="w-full h-64 object-cover rounded-lg mb-4">
+                
+                <h4 class="text-xl font-bold text-secondary-900 mb-2">Website Restoran "RasaNusantara"</h4>
+                
+                <p class="text-secondary-700 mb-4">
+                    Ini adalah deskripsi dummy yang lebih panjang untuk project tersebut. Project ini dibuat untuk mendemonstrasikan kemampuan dalam membuat layout yang bersih dan responsif menggunakan Tailwind CSS. 
+                </p>
+                <p class="text-secondary-700 mb-4">
+                    Tantangan utama dalam project ini adalah memastikan bahwa tampilan galeri foto dan menu makanan tetap menarik di semua ukuran layar, dari mobile hingga desktop.
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1 rounded-full">HTML5</span>
+                    <span class="bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                    <span class="bg-secondary-100 text-secondary-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="p-5 border-t text-right">
+                <button data-modal-close="projectModal" class="bg-secondary-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-secondary-700 transition duration-300">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Temukan semua tombol yang membuka modal
+            const openModalButtons = document.querySelectorAll('[data-modal-target]');
+            
+            // Temukan semua tombol yang menutup modal
+            const closeModalButtons = document.querySelectorAll('[data-modal-close]');
+            
+            // Fungsi untuk membuka modal
+            const openModal = (modal) => {
+                if (modal == null) return;
+                modal.classList.remove('hidden');
+            }
+            
+            // Fungsi untuk menutup modal
+            const closeModal = (modal) => {
+                if (modal == null) return;
+                modal.classList.add('hidden');
+            }
+            
+            // Tambahkan event listener ke setiap tombol "Lihat Detail"
+            openModalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Ambil ID modal dari atribut 'data-modal-target'
+                    const modal = document.querySelector(button.dataset.modalTarget);
+                    
+                    // (Opsional) Di sini Anda bisa mengubah konten modal
+                    // berdasarkan tombol mana yang diklik, tapi untuk
+                    // project dummy, kita tampilkan konten yang sama.
+                    
+                    openModal(modal);
+                });
+            });
+
+            // Tambahkan event listener ke setiap tombol "Tutup"
+            closeModalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Temukan modal terdekat
+                    const modal = button.closest('.fixed');
+                    closeModal(modal);
+                });
+            });
+
+            // (Opsional) Tutup modal jika mengklik di luar konten modal
+            window.addEventListener('click', event => {
+                if (event.target.id === 'projectModal') {
+                    const modal = document.getElementById('projectModal');
+                    closeModal(modal);
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
